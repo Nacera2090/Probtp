@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulaire.css" >
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <h1>Formulaire de télépaiement</h1>
+
+    <form method="GET">
+      <label for="id-last-name">Nom*</label>
+      <input
+        type="text"
+        name="last-name"
+        id="id-last-name"
+        placeholder="Entrez votre nom"
+        required
+      >
+
+      <label for="id-first-name">Prénom*</label>
+      <input
+        type="text"
+        name="first-name"
+        id="id-first-name"
+        placeholder="Entrez votre prénom"
+        required
+      >
+      <label for="id-email">E-mail*</label>
+      <input
+        type="text"
+        name="email"
+        id="id-email"
+        placeholder="Entrez votre e-mail"
+        required
+      >
+      <label for="id-paiement">Mode de paiement *</label>
+        <select id="id-paiement" name="paiment" required>
+         <option value="">Mode de paiement souhaité</option>
+         <option value="chèque">Chèque</option>
+         <option value="prélèvement">Prélèvement à échéance</option>
+        </select>
+      <label for="id-message">Message*</label><br >
+      <textarea
+        id="id-message"
+        name="message"
+        rows="6"
+        placeholder="Entrez votre message"
+        required
+      ></textarea>
+      <br >
+
+      <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
